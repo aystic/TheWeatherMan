@@ -44,7 +44,7 @@ const App = () => {
       <Paper
         elevation={3}
         style={{
-          width: "95vw",
+          width: "75vw",
           padding: "10px",
         }}
       >
