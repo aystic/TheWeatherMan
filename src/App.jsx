@@ -10,7 +10,6 @@ import InfoCard from "./Components/Main/InfoCard";
 import WeatherDataCard from "./Components/Main/WeatherDataCard";
 import CityDetails from "./Components/Main/CityDetails";
 import FetchCityWeather from "./Helpers/FetchCityWeather";
-import styles from "./App.module.css";
 
 import { useEffect, useState } from "react";
 
@@ -33,6 +32,7 @@ const App = () => {
       getCityWeather(localStorage.getItem("cityName"));
     }
   }, []);
+
   return (
     <Stack
       justifyContent="center"
