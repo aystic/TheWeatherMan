@@ -1,4 +1,5 @@
 import { Typography, Box } from "@mui/material";
+import HeaderImageUrl from "../../../public/animated-logo.svg";
 
 const Title = () => {
   return (
@@ -12,7 +13,7 @@ const Title = () => {
         The Weather Man
       </Typography>
       <img
-        src="../../../public/animated-logo.svg"
+        src={HeaderImageUrl}
         style={{
           height: "72px",
         }}

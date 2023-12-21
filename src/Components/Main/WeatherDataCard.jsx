@@ -61,7 +61,7 @@ const WeatherDataCard = ({ weatherData }) => {
         </Box>
         <Box>
           <img
-            src={`./public/weather-icons/${weatherData?.weather[0]?.icon}.svg`}
+            src={`/weather-icons/${weatherData?.weather[0]?.icon}.svg`}
             style={{
               height: "128px",
             }}
