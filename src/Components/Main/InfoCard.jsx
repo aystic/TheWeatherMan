@@ -85,7 +85,9 @@ const InfoCard = ({ weatherData }) => {
                     </>
                   }
                 />
-                <ListItemIcon>{detail.icon}</ListItemIcon>
+                <ListItemIcon style={{ minWidth: 0 }}>
+                  {detail.icon}
+                </ListItemIcon>
               </ListItem>
               {idx < 4 && <Divider />}
             </Box>
