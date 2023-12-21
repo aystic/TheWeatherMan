@@ -24,7 +24,15 @@ const WEATHER_DATA_POINTS = [
 ];
 const InfoCard = ({ weatherData }) => {
   return (
-    <Card>
+    <Card
+      style={{
+        height: "100%",
+        minHeight: "300px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}
+    >
       <List>
         {WEATHER_DATA_POINTS.map((detail, idx) => {
           let value = null;
@@ -63,10 +71,14 @@ const InfoCard = ({ weatherData }) => {
                           marginRight: "8px",
                         }}
                       >
-                        <Typography variant="h6" component="p">
+                        <Typography
+                          variant="body"
+                          component="p"
+                          fontWeight="bold"
+                        >
                           {detail.text}
                         </Typography>
-                        <Typography variant="h6" component="p">
+                        <Typography variant="body" component="p">
                           {value}
                         </Typography>
                       </Stack>

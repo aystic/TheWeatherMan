@@ -20,7 +20,7 @@ const WeatherDataCard = ({ weatherData }) => {
         }}
       >
         <Box>
-          <Typography variant="h3" component="p">
+          <Typography variant="h4" component="p">
             {Math.round(weatherData?.main?.temp)}&deg;C
           </Typography>
         </Box>

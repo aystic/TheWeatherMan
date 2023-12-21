@@ -4,6 +4,7 @@ import Paper from "@mui/material/Paper";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import CircularProgress from "@mui/material/CircularProgress";
+import Container from "@mui/material/Container";
 import Title from "./Components/Header/Title";
 import Search from "./Components/Header/Search";
 import InfoCard from "./Components/Main/InfoCard";
@@ -41,13 +42,7 @@ const App = () => {
         minHeight: "100vh",
       }}
     >
-      <Paper
-        elevation={3}
-        style={{
-          width: "75vw",
-          padding: "10px",
-        }}
-      >
+      <Container maxWidth="lg">
         <Card
           style={{
             padding: "12px",
@@ -142,7 +137,7 @@ const App = () => {
             )}
           </Grid>
         </Card>
-      </Paper>
+      </Container>
     </Stack>
   );
 };
